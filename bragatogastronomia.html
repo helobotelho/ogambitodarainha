@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bragato Vini & Gastronomia</title>
+    <link rel="stylesheet" href="./css/restaurantes.css">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <script src="https://kit.fontawesome.com/ea0e8d9cb6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="funcoes.js"></script>
+</head>
+
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <div class="header">
+        <div class="box_logo"> <img src="./images/logo logo.png"></div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./index.html#sobre">Berlim</a>
+                </li>
+                <li>
+                    <a href="./index.html#pontos">Pontos turísticos</a>
+                </li>
+                <li>
+                    <a href="./gastronomia.html">Gastronomia</a>
+                </li>
+
+            </ul>
+            <!-- <a href="#" onclick="toogleNav()"><i class="fas fa-bars" id="header-toggle"></i></a> -->
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1>Bragato Vini & Gastronomia</h1>
+        </div>
+        <div class="images">
+            <img class="spot_images" src="./images/gastronomia/bragato comida.jpg" alt=""
+                title="Foto de um prato do restaurante Bragato Vini & Gastronomia">
+            <img class="spot_images" src="./images/gastronomia/bragatophoto.jpg" alt=""
+                title="Foto do logo do restaurante Bragato Vini & Gastronomia">
+            <img class="spot_images" src="./images/gastronomia/bragato ambiente.jpg" alt=""
+                title="Foto do ambiente do restaurante Bragato Vini & Gastronomia">
+        </div>
+        <section class="info">
+            <p>
+                A cozinha oferece um menu que muda diariamente, com uma seleção deliberadamente limitada de pratos
+                quentes
+                e leves de massas, bem como pratos frios e saladas, por exemplo, carpaccio de carne e carne, salada
+                pulpo com rúcula, bem como bolos caseiros. Além de vinhos selecionados para acompanhar tudo!
+            </p>
+            <div class="half_section">
+                <h3> <i class="fa-solid fa-clock"></i> horário de funcionamento:</h3>
+                <p>De segunda à sexta: 12:00 às 23:00 </p>
+                <p> Sábado: 16:00 às 23:00</p>
+                <p> Domingo: Fechado </p>
+
+                <h3><i class="fa-solid fa-comments"></i> avaliações:</h3>
+                <div class="avaliation">
+                    <div class="avaliation_content">
+                        <div class="avaliation_text">
+                            <p class="person_name">Marisa Lopes:</p>
+                            <p> Conheci por meio de um amigo! Um dos melhores italianos da cidade!
+                                Grande anfitrião que também é o cozinheiro e especialista em vinhos! Posso recomendar
+                                sem reservas!
+                            </p>
+                            <p class="grade">
+                                Nota:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="avaliation">
+                    <div class="avaliation_content">
+                        <div class="avaliation_text">
+                            <p class="person_name">Lucca Peter:</p>
+                            <p>
+                                Adoramos ir a Bragato; desfrute do belo ambiente, da excelente cozinha italiana, da
+                                vasta gama de vinhos e do serviço comprometido e cordial. A venda fora de casa é um
+                                ponto brilhante na era Corona! 👍
+                            </p>
+                            <p class="grade">
+                                Nota:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="avaliation">
+                    <div class="avaliation_content">
+                        <div class="avaliation_text">
+                            <p class="person_name">Susanne Louis:</p>
+                            <p>Não é o restaurante mais barato. É muito bom. A comida é deliciosa e o serviço é muito
+                                amigável.
+                            </p>
+                            <p class="grade">
+                                Nota:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3><i class="fa-solid fa-user-check"></i> Envie sua recomendação: </h3>
+                <form action="/pagina-processa-dados-do-form" method="post">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name"/>
+                    </div>
+                    <div>
+                        <label for="msg">Mensagem:</label>
+                        <textarea id="msg"></textarea>
+                    </div>
+
+                        <button>Enviar</button>
+
+                </form>
+
+            </div>
+
+            <div class="section_spacing"></div>
+            <div class="half_section">
+                <h3><i class="fa-solid fa-utensils"></i> Cardápio </h3>
+                <img class="cardapio" src="./images/gastronomia/menu bragato.jpg"
+                    title="Cardápio do restaurante Bragato Vini & Gastronomia">
+
+                <h3> <i class="fa-solid fa-square-poll-horizontal"></i> site oficial:</h3>
+                <p><a href="https://bragato.berlin/">https://bragato.berlin/
+                    </a></p>
+
+                <h3><i class="fa-solid fa-map-location-dot"></i> Localização:</h3>
+                <p>Dahlmannstraße 7, 10629 Berlin, Alemanha</p>
+
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1214.362267513951!2d13.302764700998985!3d52.502225796679596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850dd6f084269%3A0x1f8ad33bdcf8ef23!2sBragato%20Vini%20%26%20Gastronomia!5e0!3m2!1spt-BR!2sbr!4v1650387924116!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy"
+                    title="Mapa de localização do Bragato Vini & Gastronomia"></iframe>
+            </div>
+
+
+        </section>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Oswald&display=swap');
+
+/** personalização da barra de rolagem **/
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #737373;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #545454;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #9c9c9c;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #303030;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+p::selection {
+  color: #fff;
+  background-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'quicksand';
+}
+
+p, a {
+  color: #fff;
+}
+
+/** corpo do site e seu fundo **/
+body,
+::selection {
+  padding-top: 10vh;
+  margin: 0;
+  background-color: #000;
+  background-image: url(../images/pontosturisticos/background-pontosturisticos.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/** menu acima **/
+.header {
+  backdrop-filter: blur(9px) saturate(0%);
+  -webkit-backdrop-filter: blur(9px) saturate(0%);
+  background-color: rgba(0, 0, 0, 0.367);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8.5vh;
+  z-index: 999;
+  box-shadow: 0px 0px 6px 0px rgba(71, 71, 71, 0.353);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+/** posicionamento e tamanho do logo do gambito em cima **/
+.box_logo {
+  display: flex;
+  position: fixed;
+  height: 6.5vh;
+  margin: auto 5%;
+  z-index: 999;
+}
+
+.menu>a {
+  margin-right: 1rem;
+  display: none;
+  color: white;
+}
+
+/* @media screen and (max-width: 1000px) {
+  .menu ul {
+    display: none !important;
+  }
+
+  .menu>a {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu.responsive ul {
+    float: none;
+    display: block !important;
+    text-align: left;
+  }
+} */
+
+.menu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.menu ul li a {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.125rem;
+  color: #cacaca;
+  padding: 0px 20px 0px 10px;
+  text-decoration: none;
+  border-bottom: 1px transparent;
+  line-height: 1;
+}
+
+.menu ul li a:hover {
+  color: #d41b1bc1 !important;
+  text-decoration: none !;
+  border-bottom: 1px solid #c11919c1;
+  padding-bottom: .3rem;
+  line-height: 1;
+}
+
+.menu ul li a {
+  transition: all .45s ease-in-out;
+}
+.container {
+  margin: 30px auto 30px auto;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.253);
+  width: 72vw;
+  border-radius: 20px;
+  margin-top: 3vh;
+}
+
+.container h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 3vh;
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #6a6767d9, 0 3px 0 rgb(111, 106, 106), 0 2px 0 #777272, 0 2px 0 rgb(103, 101, 101); padding-top: 20px;
+}
+
+
+h2 { 
+  font-family: 'Monaco', Monospace;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 3vh;
+  text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5), 3px 0 3px #FF002B, 4px 0 3px #800015, 4px 2px 3px rgba(77, 0, 13, 0.5), 2px 2px 2px rgba(206, 89, 55, 0);
+  padding-top: 40px;
+}
+
+.banner_img {
+  position: fixed;
+  width: 34vh;
+  z-index: 100;
+  right: 0pt;
+  float: right;
+  bottom: 0pt;
+}
+
+.images {
+  height: 30vh;
+  font-size: 0;
+  float: center;
+}
+
+img {
+  opacity: 0.9;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+.spot_images {
+  height: 30vh;
+  width: 33.3%;
+  object-fit: cover;
+}
+
+.info {
+  padding: 1vw 3vw 0 3vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+p {
+  color: #fff;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #bb0a1e;
+  text-transform: uppercase;
+}
+
+.half_section {
+  width: 46.5%;
+}
+
+.section_spacing {
+  width: 6%;
+}
+
+.mapa {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 60vh;
+  border: 0;
+}
+
+.avaliation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.person_name {
+  color: #f5b064;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: .2rem;
+}
+
+.avaliation_content {
+  /* position: absolute; */
+  align-self: center;
+  margin-top: 7%;
+  margin-left: -5%;
+  font-weight: 300;
+  background-color: #820a0b;
+  border-radius: 0% 5% 5% 5%;
+  padding: 1rem 2rem 1rem 6.5vmin;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.avaliation_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.grade {
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: solid;
+  margin-top: 10px;
+}
+
+.fa-star {
+  letter-spacing: -5px;
+}
+
+.gray-star {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.person_img {
+  border-radius: 50%;
+  height: 14.5vmin;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .half_section {
+    width: 100%;
+  }
+
+  .section_spacing {
+    width: 0%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+}

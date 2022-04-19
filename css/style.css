@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Clicker+Script&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@300;400;700&display=swap');
+
+/** personalização da barra de rolagem **/
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #737373;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #545454;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #9c9c9c;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #303030;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+p::selection {
+  color: #fff;
+  background-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  font-size: 1.1rem !important;
+  font-weight: 400;
+  text-align: left;
+}
+
+/** corpo do site e seu fundo **/
+body,
+::selection {
+  margin: 0;
+  background-color: #000;
+  background-image: url(../images/background1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  margin-left: 0;
+}
+
+/** container principal central com efeito vidro **/
+.container {
+  width: 100%;
+  backdrop-filter: blur(1px) saturate(0%);
+  background-color: rgba(0, 0, 0, 0.557);
+  margin-top: 0vh;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+
+.container_about {
+  width: 100%;
+  border-radius: 0px;
+  display: flex;
+  margin-bottom: 10vh;
+  margin-top: -28vh;
+}
+
+.img-carousel {
+  margin-top: 2vh;
+  filter: opacity(38%);
+  height: 38rem;
+  width: auto;
+}
+
+/** menu acima **/
+.header {
+  backdrop-filter: blur(9px) saturate(0%);
+  -webkit-backdrop-filter: blur(9px) saturate(0%);
+  background-color: rgba(0, 0, 0, 0.367);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8.5vh;
+  z-index: 999;
+  box-shadow: 0px 0px 6px 0px rgba(71, 71, 71, 0.353);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.menu > a {
+  margin-right: 1rem;
+  display: none;
+  color: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .menu ul {
+    display: none !important;
+  }
+
+  .menu > a {
+    float: right;
+    display: block;
+  }
+
+  .bethImg {
+    margin-bottom: 3rem;
+    margin-left: unset !important;
+  }
+  .presentation {
+    padding: 1rem !important;
+  }
+  .img-carousel,
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  /* .menu.responsive {position: relative;} */
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu.responsive ul {
+    float: none;
+    display: block !important;
+    text-align: left;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.menu ul li a {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.125rem;
+  color: #cacaca;
+  padding: 0px 20px 0px 10px;
+  text-decoration: none;
+  border-bottom: 1px transparent;
+  line-height: 1;
+}
+
+.menu ul li a:hover {
+  content: attr(data-item);
+    transition: all 0.7s ease-in;
+  color: #d41b1bc1 !important;
+  text-decoration: none;
+  border-bottom: 1px solid #c11919c1 !important;
+  padding-bottom: .3rem;
+  line-height: 1;
+}
+
+.menu ul li a {
+  transition: all 0.45s ease-in-out;
+}
+
+/** título principal **/
+h1 {
+  margin: 8rem 0 0rem 0 !important;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 6.6rem !important;
+  font-weight: 900 !important;
+  color: #fff;
+  line-height: 7rem !important;
+}
+
+/** subtitulo logo abaixo do título **/
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5vh !important;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 1.8rem !important;
+}
+
+/** título do container para começar conteúdo **/
+h3 {
+  font-family: 'League Spartan', sans-serif;
+  color: #fff;
+  text-shadow: 0 -1px 2px #fff, 0 -2px 2px #c11919c1, 2px 2px 2px rgba(206, 89, 55, 0);
+  font-size: 6vh !important;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 7rem !important;
+  letter-spacing: 2px;
+}
+/** Carousel **/
+iframe {
+  margin-top: 2vh;
+  height: 38rem;
+  width: 100%;
+}
+
+.berlim-captions {
+  right: 1rem !important;
+  left: 1rem !important;
+}
+
+.berlim-captions > p {
+  margin: 0 5rem 1rem 5rem;
+}
+
+.berlim-infos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.info-body p {
+  text-align: center;
+  font-size: unset !important;
+  margin-bottom: 0rem;
+}
+
+.info-title {
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
+}
+.info-title > i {
+  color: #bb0a1e;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.info-title > h6 {
+  font-weight: 700;
+  color: #bb0a1e;
+  width: min-content;
+  margin-left: 0.5rem;
+  font-family: 'poppins';
+}
+
+/** ajustes de espaçamento do container principal **/
+.box {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box_about {
+  width: 60%;
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .box_about {
+    width: 100%;
+  }
+}
+
+.presentation {
+  margin-top: 4rem;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 4rem 0rem 0rem 8rem;
+}
+
+.bethImg {
+  margin-top: 0rem;
+  width: 60rem;
+  height: auto;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 1700px) {
+  .bethImg {
+    width: 55rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .bethImg {
+    width: 50rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .bethImg {
+    width: 40rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  h1 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    margin: 0 0 1rem 0;
+  }
+
+  .presentation {
+    flex-direction: column;
+  }
+
+  .bethImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .box_tourism {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image {
+    width: unset !important;
+  }
+
+  .img-paragraph {
+    top: unset !important;
+  }
+}
+
+/** posicionamento e tamanho do logo do gambito em cima **/
+.box_logo {
+  display: flex;
+  position: fixed;
+  height: 6.5vh;
+  margin: auto 7%;
+  z-index: 999;
+}
+
+/** configurações das imagens dos pontos turísticos **/
+.image {
+  opacity: 0.8;
+  width: 20%;
+  margin-top: 9vh;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/** efeito de aparecer a palavra (título) aos poucos quando atualiza a página **/
+.fadeIn {
+  animation: fadeIn 1.5s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/** fonte e posicionamento dos títulos dentro das fotos **/
+.img-paragraph {
+  /* display: none; */
+  font-family: 'League Spartan', sans-serif;
+  position: absolute;
+  top: 38vh;
+  align-self: center;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 1.7rem !important;
+  letter-spacing: 2px;
+  line-height: 3.5vh;
+  font-weight: 900;
+  text-align: center;
+  width: min-content;
+}
+
+.image a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+.img-thumbnail:hover {
+  filter: grayscale(0.7);
+  cursor: pointer;
+}
