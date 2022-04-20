@@ -243,7 +243,6 @@ img:hover {
 
 p {
   color: #fff;
-  text-align: justify;
   line-height: 1.5rem;
 }
 
@@ -285,7 +284,7 @@ h3 {
 .avaliation_content {
   /* position: absolute; */
   align-self: center;
-  margin-top: 7%;
+  margin-top: 3%;
   margin-left: -5%;
   font-weight: 300;
   background-color: #820a0b;
@@ -318,7 +317,7 @@ h3 {
 
 .person_img {
   border-radius: 50%;
-  height: 14.5vmin;
+  height: 13.5vmin;
   z-index: 1;
   position: relative;
 }
@@ -336,4 +335,44 @@ h3 {
     display: flex;
     flex-direction: column;
   }
+}
+
+button {
+  /* Para posicionar os botões na mesma posição dos campos de texto */
+  width: 9.3vh;
+  height: 5.7vh;
+  background-color: rgba(48, 47, 47, 0.907);
+  border-radius: 0.8vh;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6vh;
+  cursor: pointer;
+  margin-left: 60%;
+  margin-bottom: 0.5vh;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #770101;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.btn-container {
+    position: fixed;
+    z-index: 100;
+    right: -2vh;
+    top: 9vh;
+    float: right;
+    font-size: 10px !important;
+}
+
+#increase-font {
+  font-size: 2.2vh;
+}
+
+#decrease-font {
+  font-size: 2.2vh;
 }

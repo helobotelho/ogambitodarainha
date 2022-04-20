@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gastronomia em Berlim</title>
     <link rel="stylesheet" href="./css/gastronomia.css">
+    <link rel="stylesheet" href="./css/contrast.css">
     <link rel="shortcut icon" href="./images/favicon.png">
     <script src="https://kit.fontawesome.com/ea0e8d9cb6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -17,17 +18,6 @@
 
 <body>
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-
     <div class="header">
         <div class="box_logo"> <img src="./images/logo logo.png"></div>
         <nav class="menu" id="menu">
@@ -36,10 +26,10 @@
                     <a href="./index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="./index.html#sobre">Berlim</a>
+                    <a href="./index.html#sobre">Sobre</a>
                 </li>
                 <li>
-                    <a href="./index.html#pontos">Pontos turísticos</a>
+                    <a href="./index.html#pontos">Turismo</a>
                 </li>
                 <li>
                     <a href="./gastronomia.html">Gastronomia</a>
@@ -49,6 +39,14 @@
             <!-- <a href="#" onclick="toogleNav()"><i class="fas fa-bars" id="header-toggle"></i></a> -->
         </nav>
     </div>
+
+    <div class="btn-container">
+        <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
+            onkeydown="window.toggleContrast()"><button id="altocontraste">Alterar contraste</button></a>
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button> </div>
+
+
 
     <div class="container">
         <div class="title">
@@ -162,7 +160,8 @@
                         <i class="fa-solid fa-star gray-star"
                             title="Nota de avaliação do restaurante Hofbrau Wirtshaus"></i> &nbsp; 4,2 </p>
                     <p class="price">Faixa de preço: $$-$$$</p>
-                    <a href="./hofbrauwirtshaus.html" button class="custom-btn btn-6"><span>Saiba mais</span></button></a>
+                    <a href="./hofbrauwirtshaus.html" button class="custom-btn btn-6"><span>Saiba
+                            mais</span></button></a>
                 </div>
             </div>
             <div class="col">
@@ -187,6 +186,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+    <script src="./js/high-contrast.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('increase-font');
+            var elementBtnDecreaseFont = document.getElementById('decrease-font');
+            // Padrão de tamanho, equivale a 100% do valor definido no Body
+            var fontSize = 100;
+            // Valor de incremento ou decremento, equivale a 10% do valor do Body
+            var increaseDecrease = 10;
+
+            // Evento de click para aumentar a fonte
+            elementBtnIncreaseFont.addEventListener('click', function (event) {
+                fontSize = fontSize + increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            // Evento de click para diminuir a fonte
+            elementBtnDecreaseFont.addEventListener('click', function (event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+        }
+    </script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 </body>
 
 </html>

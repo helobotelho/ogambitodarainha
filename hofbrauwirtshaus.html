@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hofbrau Wirtshaus</title>
     <link rel="stylesheet" href="./css/restaurantes.css">
+    <link rel="stylesheet" href="./css/contrast.css">
     <link rel="shortcut icon" href="./images/favicon.png">
     <script src="https://kit.fontawesome.com/ea0e8d9cb6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -15,18 +16,6 @@
 </head>
 
 <body>
-
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-
     <div class="header">
         <div class="box_logo"> <img src="./images/logo logo.png"></div>
         <nav class="menu" id="menu">
@@ -35,10 +24,10 @@
                     <a href="./index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="./index.html#sobre">Berlim</a>
+                    <a href="./index.html#sobre">Sobre</a>
                 </li>
                 <li>
-                    <a href="./index.html#pontos">Pontos turísticos</a>
+                    <a href="./index.html#pontos">Turismo</a>
                 </li>
                 <li>
                     <a href="./gastronomia.html">Gastronomia</a>
@@ -49,16 +38,22 @@
         </nav>
     </div>
 
+    <div class="btn-container">
+        <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><button>Alterar contraste</button></a>
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button> </div>
+
+
     <div class="container">
         <div class="title">
             <h1>Hofbräu Wirtshaus Berlin</h1>
         </div>
         <div class="images">
-            <img class="spot_images" src="./images/gastronomia/hofbrau1.jpg" alt=""
+            <img class="spot_images" src="./images/gastronomia/hofbrau1.jpg" alt="Foto de um prato do restaurante Hofbräu Wirtshaus Berlin"
                 title="Foto de um prato do restaurante Hofbräu Wirtshaus Berlin">
-            <img class="spot_images" src="./images/gastronomia/hofbrauphoto.jpg" alt=""
+            <img class="spot_images" src="./images/gastronomia/hofbrauphoto.jpg" alt="Foto do logo do restaurante Hofbräu Wirtshaus Berlin"
                 title="Foto do logo do restaurante Hofbräu Wirtshaus Berlin">
-            <img class="spot_images" src="./images/gastronomia/hofbrau3.jpg" alt=""
+            <img class="spot_images" src="./images/gastronomia/hofbrau3.jpg" alt="Foto do ambiente do restaurante Hofbräu Wirtshaus Berlin"
                 title="Foto do ambiente do restaurante Hofbräu Wirtshaus Berlin">
         </div>
         <section class="info">
@@ -94,7 +89,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star" alt="Nota de avaliação de um cliente = 5 estrelas"></i>
                             </p>
                         </div>
                     </div>
@@ -115,7 +110,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star" alt="Nota de avaliação de um cliente = 5 estrelas"></i>
                             </p>
                         </div>
                     </div>
@@ -133,7 +128,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star" alt="Nota de avaliação de um cliente = 5 estrelas"></i>
                             </p>
                         </div>
                     </div>
@@ -160,7 +155,7 @@
             <div class="half_section">
                 <h3><i class="fa-solid fa-utensils"></i> Cardápio </h3>
                 =<img class="cardapio" src="./images/gastronomia/menu hofbrau.jpg"
-                    title="Cardápio do restaurante Hofbräu Wirtshaus Berlin"> <a
+                    title="Cardápio do restaurante Hofbräu Wirtshaus Berlin" alt="Cardápio do restaurante Hofbräu Wirtshaus Berlin"> <a
                     href="https://www.hofbraeu-wirtshaus.de/wp-content/uploads/speisekarte-extern/hbw-speisekarte-berlin-productmate.pdf"
                     target="_blank">
                     Clique aqui para expandir o cardápio </a>
@@ -174,12 +169,51 @@
 
                 <iframe class="mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.4859404614276!2d13.411632115807702!3d52.524641579815125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1e91407b03%3A0xdb4940eb3fc10d1d!2sHofbr%C3%A4u%20Wirtshaus%20Berlin!5e0!3m2!1spt-BR!2sbr!4v1650397469699!5m2!1spt-BR!2sbr"
-                    allowfullscreen="" loading="lazy" title="Mapa de localização do Hofbräu Wirtshaus Berlin"></iframe>
+                    allowfullscreen="" loading="lazy" title="Mapa de localização do Hofbräu Wirtshaus Berlin" alt="Mapa de localização do Hofbräu Wirtshaus Berlin"></iframe>
             </div>
 
 
         </section>
     </div>
+
+    
+<script src="./js/high-contrast.js"></script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        var elementBody = document.querySelector('body');
+        var elementBtnIncreaseFont = document.getElementById('increase-font');
+        var elementBtnDecreaseFont = document.getElementById('decrease-font');
+        // Padrão de tamanho, equivale a 100% do valor definido no Body
+        var fontSize = 100;
+        // Valor de incremento ou decremento, equivale a 10% do valor do Body
+        var increaseDecrease = 10;
+
+        // Evento de click para aumentar a fonte
+        elementBtnIncreaseFont.addEventListener('click', function(event) {
+            fontSize = fontSize + increaseDecrease;
+            elementBody.style.fontSize = fontSize + '%';
+        });
+
+        // Evento de click para diminuir a fonte
+        elementBtnDecreaseFont.addEventListener('click', function(event) {
+            fontSize = fontSize - increaseDecrease;
+            elementBody.style.fontSize = fontSize + '%';
+        });
+    }
+
+</script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
 </body>
 

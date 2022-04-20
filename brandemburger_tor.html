@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandenburger Tor</title>
     <link rel="stylesheet" href="./css/tourist_spot.css">
+    <link rel="stylesheet" href="./css/contrast.css">
     <link rel="shortcut icon" href="./images/favicon.png">
     <script src="https://kit.fontawesome.com/ea0e8d9cb6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -15,29 +16,33 @@
 
 <body>
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-
     <div class="header">
         <div class="box_logo"> <img src="./images/logo logo.png"></div>
         <nav class="menu" id="menu">
             <ul>
                 <li>
-                    <a href="./index.html#pontos">Voltar ao ínicio</a>
+                    <a href="./index.html">Inicio</a>
                 </li>
-
+                <li>
+                    <a href="./index.html#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="./index.html#pontos">Turismo</a>
+                </li>
+                <li>
+                    <a href="./gastronomia.html">Gastronomia</a>
+                </li>
+    
             </ul>
             <!-- <a href="#" onclick="toogleNav()"><i class="fas fa-bars" id="header-toggle"></i></a> -->
         </nav>
     </div>
+    
+    <div class="btn-container">
+        <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><button>Alterar contraste</button></a>
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button> </div>
+    
 
     <div class="container">
         <div class="title">
@@ -72,9 +77,9 @@
                 <p>24 horas por dia.</p>
                 <p>
                     O único setor sujeito a horários de abertura e fechamento é a Sala do Silêncio, um
-                    recanto de paz e meditação localizado na zona norte da atração.
-                </p>
-                <p>Sala do Silêncio</p>
+                    recanto de paz e meditação localizado na zona norte da atração. 
+                </p><br>
+                <p><b>Sala do Silêncio</b></p>
                 <p>de Março a Outubro: 11h00-18h00;</p>
                 <p>Novembro e Fevereiro: 11:00-17:00;</p>
                 <p>Dezembro e Janeiro 11:00-16:00;</p>
@@ -145,6 +150,45 @@
 
         </section>
     </div>
+    <script src="./js/high-contrast.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('increase-font');
+            var elementBtnDecreaseFont = document.getElementById('decrease-font');
+            // Padrão de tamanho, equivale a 100% do valor definido no Body
+            var fontSize = 100;
+            // Valor de incremento ou decremento, equivale a 10% do valor do Body
+            var increaseDecrease = 10;
+    
+            // Evento de click para aumentar a fonte
+            elementBtnIncreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize + increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+    
+            // Evento de click para diminuir a fonte
+            elementBtnDecreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+        }
+    
+    </script>
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    
+
 
 </body>
 

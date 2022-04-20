@@ -181,15 +181,18 @@ body,
 }
 
 .menu ul li a {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 2px;
-  font-size: 1.125rem;
-  color: #cacaca;
-  padding: 0px 20px 0px 10px;
+  font-family: 'Quicksand', sans-serif !important;
+  letter-spacing: 1.2px !important;
+  font-size: 1.28em !important;
+  color: #cacaca !important;
+  padding: 0px 20px 0px 10px !important;
   text-decoration: none;
-  border-bottom: 1px transparent;
-  line-height: 1;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  border-bottom: 1px transparent !important;
+  line-height: 1 !important;
 }
+
 
 .menu ul li a:hover {
   content: attr(data-item);
@@ -441,4 +444,77 @@ img {
 .img-thumbnail:hover {
   filter: grayscale(0.7);
   cursor: pointer;
+}
+
+button:hover {
+  background: #00000031;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+
+#altocontraste {
+  width: 9.3vh;
+  height: 6vh !important;
+  background-color: rgba(48, 47, 47, 0.907) !important;
+  border-radius: 0.8vh;
+  color: #fff;
+  font-size: 1.88vh !important;
+  margin-left: 60%;
+  font-weight: 400;
+  z-index: 100;
+  right: 0vh;
+  margin-top: 0.1vh !important;
+  float: right;
+  position: fixed;
+}
+
+#increase-font {
+  width: 7vh;
+  height: 5.7vh;
+  background-color: rgba(48, 47, 47, 0.907);
+  border-radius: 0.8vh;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5vh !important;
+  cursor: pointer;
+  margin-left: 60%;
+  margin-bottom: 0.5vh;
+  font-weight: 500;
+  position: fixed;
+    z-index: 100;
+    right: 0vh;
+    top: 15.5vh;
+    float: right;
+}
+
+#decrease-font {
+  width: 7vh;
+  height: 5.7vh;
+  background-color: rgba(48, 47, 47, 0.907);
+  border-radius: 0.8vh;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5vh;
+  cursor: pointer;
+  margin-left: 60%;
+  margin-bottom: 0.5vh;
+  font-weight: 500;
+  position: fixed;
+    z-index: 100;
+    right: 0vh;
+    top: 21.5vh;
+    float: right;
+}
+
+#altocontraste:hover,
+#decrease-font:hover,
+#increase-font:hover {
+  background: #770101;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
