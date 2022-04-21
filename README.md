@@ -1,4 +1,13 @@
 # FIAP-ENTERPRISE-CONNECTION-BLASTRADIUS
-#### developed by @AllanAlbuquerque, @fabriciosw and @helobotelhoc
 
-Desafio BlastRadius  Esta é uma atividade que pode ser desenvolvida de forma individual ou em grupo de, no máximo, cinco (5) integrantes.  O Case Gulliver Traveller nos trará desafios diários de como desenvolver um portal que concentre informações diversas sobre turismo, de modo que não seja apenas mais um site no universo web.  Visualizando esse cenário e tendo como base os nossos estudos sobre HTML e CSS, desenvolva uma página/site que apresente algum ou alguns pontos turísticos que foram citados/representados em alguma série ou filme. A ideia é que sua página/site esteja altamente customizada para a série ou o filme, como, por exemplo, utilizar personagens para explicar ou formatar a sua página/site.  Em relação ao ponto turístico, explore: horário de funcionamento, melhor época para visita, fato histórico, duração, valor, entre outros dados.
+O Capítulo 9 desta Fase nos fez refletir sobre a democratização da internet de modo que pensemos nossas páginas voltadas para todos os públicos. Por isso, temos a obrigação de pensar para além de nossa esfera social e, de maneira empática, construir uma internet mais inclusiva, já que a acessibilidade é fundamental para que pensemos a usabilidade e a experiência de TODOS os usuários.
+Visualizando esse cenário e tendo como base os nossos estudos sobre HTML e CSS, incorpore a acessibilidade ao Projeto Gulliver Traveller de modo que ele possa ser adaptado para um ou mais públicos de PCD, pensando na inclusão desses usuários e sua experiência na plataforma.
+O site e suas páginas com recursos e melhorias de acessibilidade devem estar em um Github para que a empresa parceira possa avaliar e definir os três melhores projetos com base nestes critérios:
+
+Acessibilidade.
+Inclusão de usuários PCD.
+Recursos de codificação utilizado (HTML e CSS).
+Funcionalidade das páginas conforme as histórias de usuários levantadas no Product Backlog.
+
+
+A página/site deve estar em um Github, cada integrante do grupo deve enviar um PDF com nome de todos os desenvolvedores do projeto e o link do Github para a plataforma on.fiap.com.br.
