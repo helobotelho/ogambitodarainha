@@ -177,7 +177,7 @@ body,
 
 .menu ul li a:hover {
   content: attr(data-item);
-    transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
   color: #d41b1bc1 !important;
   text-decoration: none;
   border-bottom: 1px solid #c11919c1 !important;
@@ -361,8 +361,7 @@ h3 {
 
 .cardapio {
   max-width: 100%;
-  height: auto;
-
+  max-height: 20vh;
 }
 
 
@@ -446,12 +445,12 @@ button:hover {
 }
 
 .btn-container {
-    position: fixed;
-    z-index: 100;
-    right: -2vh;
-    top: 9vh;
-    float: right;
-    font-size: 10px !important;
+  position: fixed;
+  z-index: 100;
+  right: -2vh;
+  top: 9vh;
+  float: right;
+  font-size: 10px !important;
 }
 
 #increase-font {

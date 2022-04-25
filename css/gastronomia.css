@@ -72,7 +72,7 @@ a {
 
 body {
     font-size: 16px;
-  }
+}
 
 /** corpo do site e seu fundo **/
 body,
@@ -105,7 +105,7 @@ body,
     display: flex;
     align-items: center;
     margin-bottom: 10%;
-  }
+}
 
 /** posicionamento e tamanho do logo do gambito em cima **/
 .box_logo {
@@ -114,7 +114,7 @@ body,
     height: 6.5vh;
     margin: auto 7%;
     z-index: 999;
-  }
+}
 
 .menu>a {
     margin-right: 1rem;
@@ -153,20 +153,20 @@ body,
     align-items: center;
     position: absolute;
     right: 0;
-  }
-  
-  .menu li {
+}
+
+.menu li {
     list-style-type: none;
     margin-right: 20px;
-  }
-  
-  .menu ul {
+}
+
+.menu ul {
     display: flex;
     flex-direction: row;
     margin: 0;
-  }
-  
-  .menu ul li a {
+}
+
+.menu ul li a {
     font-family: 'Quicksand', sans-serif !important;
     letter-spacing: 1.2px !important;
     font-size: 1.28em !important;
@@ -177,23 +177,25 @@ body,
     text-transform: none !important;
     border-bottom: 1px transparent !important;
     line-height: 1 !important;
-  }
-  
-  
-  .menu ul li a:hover {
+}
+
+
+.menu ul li a:hover {
     content: attr(data-item);
-      transition: all 0.7s ease-in;
+    transition: all 0.7s ease-in;
     color: #d41b1bc1 !important;
     text-decoration: none;
     border-bottom: 1px solid #c11919c1 !important;
     padding-bottom: .3rem;
     line-height: 1;
-  }
-  
-  .menu ul li a {
+}
+
+.menu ul li a {
     transition: all 0.45s ease-in-out;
-  }
+}
+
 .container {
+
     margin: 30px auto 30px auto;
     backdrop-filter: blur(4px);
     background-color: rgba(0, 0, 0, 0.253);
@@ -211,9 +213,10 @@ body,
     font-size: 2rem;
     margin-bottom: 3vh;
     letter-spacing: 0.3px;
-    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #6a6767d9, 0 3px 0 rgb(111, 106, 106), 0 2px 0 #777272, 0 2px 0 rgb(103, 101, 101); padding-top: 20px;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #6a6767d9, 0 3px 0 rgb(111, 106, 106), 0 2px 0 #777272, 0 2px 0 rgb(103, 101, 101);
+    padding-top: 20px;
 
-    
+
 }
 
 
@@ -407,7 +410,7 @@ h3 {
 }
 
 .card_images {
-    height: auto;
+    height: 16vh;
     width: 14.6rem;
     object-fit: fill;
 }
@@ -521,8 +524,8 @@ h6 {
         0 0 12px 1px #8000157d,
         0 0 12px 1px #b90422;
 }
-  
-  #altocontraste {
+
+#altocontraste {
     width: 9.3vh;
     height: 6vh !important;
     background-color: rgba(48, 47, 47, 0.907) !important;
@@ -531,15 +534,19 @@ h6 {
     font-size: 1.88vh !important;
     margin-left: 60%;
     font-weight: 400 !important;
-    z-index: 100 !important;;
-    right: 0vh !important;;
+    z-index: 100 !important;
+    ;
+    right: 0vh !important;
+    ;
     margin-top: -0.5vh !important;
-    float: right !important;;
+    float: right !important;
+    ;
     line-height: 100% !important;
-    position: fixed !important;;
-  }
-  
-  #increase-font {
+    position: fixed !important;
+    ;
+}
+
+#increase-font {
     width: 7vh;
     height: 5.7vh;
     background-color: rgba(48, 47, 47, 0.907);
@@ -552,13 +559,13 @@ h6 {
     margin-bottom: 0.5vh;
     font-weight: 500;
     position: fixed;
-      z-index: 100;
-      right: 0vh;
-      top: 15.5vh;
-      float: right;
-  }
-  
-  #decrease-font {
+    z-index: 100;
+    right: 0vh;
+    top: 15.5vh;
+    float: right;
+}
+
+#decrease-font {
     width: 7vh;
     height: 5.7vh;
     background-color: rgba(48, 47, 47, 0.907);
@@ -571,18 +578,18 @@ h6 {
     margin-bottom: 0.5vh;
     font-weight: 500;
     position: fixed;
-      z-index: 100;
-      right: 0vh;
-      top: 21.5vh;
-      float: right;
-  }
-  
-  #altocontraste:hover,
-  #decrease-font:hover,
-  #increase-font:hover {
+    z-index: 100;
+    right: 0vh;
+    top: 21.5vh;
+    float: right;
+}
+
+#altocontraste:hover,
+#decrease-font:hover,
+#increase-font:hover {
     background: #770101 !important;
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
+}

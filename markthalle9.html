@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>;
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>;
 
 </head>
 
 <body>
     <div class="header">
-        <div class="box_logo"> <img src="./images/logo logo.png"></div>
+        <div class="box_logo"> <img src="./images/logo logo.png" alt="Logo da Netflix da série o Gambito da Rainha"></div>
         <nav class="menu" id="menu">
             <ul>
                 <li>
@@ -37,7 +37,7 @@
                 </li>
                 <li>
                     <a href="./vidaNoturna.html">Vida Noturna</a>
-               </li>
+                </li>
 
             </ul>
             <!-- <a href="#" onclick="toogleNav()"><i class="fas fa-bars" id="header-toggle"></i></a> -->
@@ -45,7 +45,8 @@
     </div>
 
     <div class="btn-container">
-        <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><button>Alterar contraste</button></a>
+        <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
+            onkeydown="window.toggleContrast()"><button>Alterar contraste</button></a>
         <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
         <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button> </div>
 
@@ -54,12 +55,12 @@
             <h1>Markthalle Neun</h1>
         </div>
         <div class="images">
-            <img class="spot_images" src="./images/gastronomia/markthalle1.jpg" alt="Foto de um prato do Markthalle Neun"
-                title="Foto de um prato do Markthalle Neun">
-            <img class="spot_images" src="./images/gastronomia/Markthallephoto.jpg" alt="Foto do logo do  Markthalle Neun"
-                title="Foto do logo do  Markthalle Neun">
-            <img class="spot_images" src="./images/gastronomia/markthalle3.jpg" alt="Foto do ambiente do Markthalle Neun"
-                title="Foto do ambiente do Markthalle Neun">
+            <img class="spot_images" src="./images/gastronomia/markthalle1.jpg"
+                alt="Foto de um prato do Markthalle Neun" title="Foto de um prato do Markthalle Neun">
+            <img class="spot_images" src="./images/gastronomia/Markthallephoto.jpg"
+                alt="Foto do logo do  Markthalle Neun" title="Foto do logo do  Markthalle Neun">
+            <img class="spot_images" src="./images/gastronomia/markthalle3.jpg"
+                alt="Foto do ambiente do Markthalle Neun" title="Foto do ambiente do Markthalle Neun">
         </div>
         <section class="info">
             <p>
@@ -162,7 +163,7 @@
                 <h3><i class="fa-solid fa-utensils"></i> Gastronomia: </h3>
                 <a href="https://markthalleneun.de/anbieter/8/gastronomie/" target="_blank">
                     Clique <u>aqui</u> para visualizar onde comer no Markthalle Neun </a>
-                    <p><b>€ Faixa de preço: </b>a partir de 10 euros.</p>
+                <p><b>€ Faixa de preço: </b>a partir de 10 euros.</p>
                 <h3> <i class="fa-solid fa-square-poll-horizontal"></i> site oficial:</h3>
                 <p><a href="https://markthalleneun.de/ " target="_blank">https://markthalleneun.de/
                     </a></p>
@@ -172,50 +173,50 @@
 
                 <iframe class="mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.7357179732194!2d13.429746515696399!3d52.50202337981087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e498056a6bd%3A0x9801fd632fa35512!2sMarkthalle%20Neun!5e0!3m2!1spt-BR!2sbr!4v1650399870815!5m2!1spt-BR!2sbr"
-                    allowfullscreen="" loading="lazy" title="Mapa de localização do Hofbräu Wirtshaus Berlin" alt="Mapa de localização do Hofbräu Wirtshaus Berlin"></iframe>
+                    allowfullscreen="" loading="lazy" title="Mapa de localização do Hofbräu Wirtshaus Berlin"
+                    alt="Mapa de localização do Hofbräu Wirtshaus Berlin"></iframe>
             </div>
 
 
         </section>
     </div>
 
-<script src="./js/high-contrast.js"></script>
+    <script src="./js/high-contrast.js"></script>
 
-<script type="text/javascript">
-    window.onload = function() {
-        var elementBody = document.querySelector('body');
-        var elementBtnIncreaseFont = document.getElementById('increase-font');
-        var elementBtnDecreaseFont = document.getElementById('decrease-font');
-        // Padrão de tamanho, equivale a 100% do valor definido no Body
-        var fontSize = 100;
-        // Valor de incremento ou decremento, equivale a 10% do valor do Body
-        var increaseDecrease = 10;
+    <script type="text/javascript">
+        window.onload = function () {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('increase-font');
+            var elementBtnDecreaseFont = document.getElementById('decrease-font');
+            // Padrão de tamanho, equivale a 100% do valor definido no Body
+            var fontSize = 100;
+            // Valor de incremento ou decremento, equivale a 10% do valor do Body
+            var increaseDecrease = 10;
 
-        // Evento de click para aumentar a fonte
-        elementBtnIncreaseFont.addEventListener('click', function(event) {
-            fontSize = fontSize + increaseDecrease;
-            elementBody.style.fontSize = fontSize + '%';
-        });
+            // Evento de click para aumentar a fonte
+            elementBtnIncreaseFont.addEventListener('click', function (event) {
+                fontSize = fontSize + increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
 
-        // Evento de click para diminuir a fonte
-        elementBtnDecreaseFont.addEventListener('click', function(event) {
-            fontSize = fontSize - increaseDecrease;
-            elementBody.style.fontSize = fontSize + '%';
-        });
-    }
+            // Evento de click para diminuir a fonte
+            elementBtnDecreaseFont.addEventListener('click', function (event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+        }
+    </script>
 
-</script>
-
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 </body>
 

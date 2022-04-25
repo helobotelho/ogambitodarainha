@@ -58,7 +58,8 @@ p::selection {
   font-family: 'quicksand';
 }
 
-p, a {
+p,
+a {
   color: #fff;
 }
 
@@ -172,6 +173,7 @@ body,
 .menu ul li a {
   transition: all .45s ease-in-out;
 }
+
 .container {
   margin: 30px auto 30px auto;
   backdrop-filter: blur(4px);
@@ -190,11 +192,12 @@ body,
   font-size: 2rem;
   margin-bottom: 3vh;
   letter-spacing: 0.3px;
-  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #6a6767d9, 0 3px 0 rgb(111, 106, 106), 0 2px 0 #777272, 0 2px 0 rgb(103, 101, 101); padding-top: 20px;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #6a6767d9, 0 3px 0 rgb(111, 106, 106), 0 2px 0 #777272, 0 2px 0 rgb(103, 101, 101);
+  padding-top: 20px;
 }
 
 
-h2 { 
+h2 {
   font-family: 'Monaco', Monospace;
   font-weight: 900;
   text-transform: uppercase;
@@ -361,12 +364,12 @@ button:hover {
 }
 
 .btn-container {
-    position: fixed;
-    z-index: 100;
-    right: -2vh;
-    top: 9vh;
-    float: right;
-    font-size: 10px !important;
+  position: fixed;
+  z-index: 100;
+  right: -2vh;
+  top: 9vh;
+  float: right;
+  font-size: 10px !important;
 }
 
 #increase-font {

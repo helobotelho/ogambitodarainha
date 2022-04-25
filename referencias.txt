@@ -6,3 +6,6 @@ Fortraveladvicelovers (https://www.fortraveladvicelovers.com/en)
 Tripadvisor (https://www.tripadvisor.com.br/)
 Netflix (https://www.netflix.com/)
 AdoroCinema (https://www.adorocinema.com/series/serie-24971/)
+Medium (https://medium.com/hash-js/implemente-uma-vers%C3%A3o-de-alto-contraste-no-seu-site-dcef330a09fd) - alterar contraste
+VLibras.gov (https://vlibras.gov.br/doc/widget/installation/webpageintegration.html) - implementando VLibras widget
+EversondaLuz (https://www.eversondaluz.com.br/aumentar-e-diminuir-fonte) - aumentar e diminuir fonte

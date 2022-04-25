@@ -1,20 +1,29 @@
 /* ..................................................................................................... */
-/* ALTO CONTRASTE */
+/* BAIXO CONTRASTE */
 .contrast,
 .contrast div,
-.contrast li,
 .contrast ol,
 .contrast footer,
 .contrast section,
 .contrast main,
 .contrast aside,
-.contrast article 
-.contrast header,
-.contrast menu,
-.constrast nav {
-    background: rgb(255, 255, 255) !important;
+.contrast article .contrast header {
+    background: rgb(255, 255, 255);
     color: rgb(0, 0, 0) !important;
 }
+
+.contrast li,
+.contrast menu,
+.contrast col,
+.constrast nav {
+    background: rgb(125, 125, 125) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.contrast img {
+    background: rgb(189, 189, 189) !important;
+}
+
 
 .contrast h1,
 .contrast h2,
@@ -35,8 +44,8 @@
     color: rgb(0, 0, 0) !important;
 }
 
-.contrast a{
-    color: rgb(160, 160, 2) !important;
+.contrast a {
+    color: rgb(135, 135, 9) !important;
 }
 
 .contrast button,
@@ -44,7 +53,7 @@
 .contrast input[type=reset],
 .contrast input[type=submit] {
     background: rgba(207, 207, 207, 0.34) !important;
-    color: rgb(154, 154, 3)!important;
+    color: rgb(154, 154, 3) !important;
     border: none !important;
 }
 

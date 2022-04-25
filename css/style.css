@@ -118,7 +118,7 @@ body,
   margin-bottom: 10%;
 }
 
-.menu > a {
+.menu>a {
   margin-right: 1rem;
   display: none;
   color: white;
@@ -130,7 +130,7 @@ body,
     display: none !important;
   }
 
-  .menu > a {
+  .menu>a {
     float: right;
     display: block;
   }
@@ -139,9 +139,11 @@ body,
     margin-bottom: 3rem;
     margin-left: unset !important;
   }
+
   .presentation {
     padding: 1rem !important;
   }
+
   .img-carousel,
   iframe {
     width: 100%;
@@ -196,7 +198,7 @@ body,
 
 .menu ul li a:hover {
   content: attr(data-item);
-    transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
   color: #d41b1bc1 !important;
   text-decoration: none;
   border-bottom: 1px solid #c11919c1 !important;
@@ -239,6 +241,7 @@ h3 {
   margin-top: 7rem !important;
   letter-spacing: 2px;
 }
+
 /** Carousel **/
 iframe {
   margin-top: 2vh;
@@ -251,7 +254,7 @@ iframe {
   left: 1rem !important;
 }
 
-.berlim-captions > p {
+.berlim-captions>p {
   margin: 0 5rem 1rem 5rem;
 }
 
@@ -278,12 +281,14 @@ iframe {
   flex-wrap: row;
   justify-content: center;
 }
-.info-title > i {
+
+.info-title>i {
   color: #bb0a1e;
   font-size: 1.5rem;
   font-weight: 900;
 }
-.info-title > h6 {
+
+.info-title>h6 {
   font-weight: 700;
   color: #bb0a1e;
   width: min-content;
@@ -484,10 +489,10 @@ button:hover {
   margin-bottom: 0.5vh;
   font-weight: 500;
   position: fixed;
-    z-index: 100;
-    right: 0vh;
-    top: 15.5vh;
-    float: right;
+  z-index: 100;
+  right: 0vh;
+  top: 15.5vh;
+  float: right;
 }
 
 #decrease-font {
@@ -503,10 +508,10 @@ button:hover {
   margin-bottom: 0.5vh;
   font-weight: 500;
   position: fixed;
-    z-index: 100;
-    right: 0vh;
-    top: 21.5vh;
-    float: right;
+  z-index: 100;
+  right: 0vh;
+  top: 21.5vh;
+  float: right;
 }
 
 #altocontraste:hover,
