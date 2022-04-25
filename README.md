@@ -15,6 +15,8 @@
 
 .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .
 .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .
+.      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .
+.      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .
 
 ➛ Possibility to change the contrast for better visibility aimed at helping people with low vision and/or other types of vision difficulties.
 
@@ -29,7 +31,7 @@
 ➛ Clickable areas in large formats, unjustified text and dark colors, to make reading easier for dyslexic users.
 
 
-⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠂⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠂⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄
+⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠂⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠂⠁⠂⠄⠄⠂⠁
 
 
 # FIAP-ENTERPRISE-CONNECTION-ACESSIBILIDADE (Accessibility)
@@ -46,6 +48,9 @@ Funcionalidade das páginas conforme as histórias de usuários levantadas no Pr
 
 A página/site deve estar em um Github, cada integrante do grupo deve enviar um PDF com nome de todos os desenvolvedores do projeto e o link do Github para a plataforma on.fiap.com.br.
 
+.      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .
+.      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .
+.      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .
 .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .
 
 
