@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>;
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>;
 </head>
 
 <body>
     <div class="header">
-        <div class="box_logo"> <img src="./images/logo logo.png" alt="Logo da Netflix da série o Gambito da Rainha"></div>
+        <div class="box_logo"> <img src="./images/logo logo.png" alt="Logo da Netflix da série o Gambito da Rainha">
+        </div>
+        <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <img src="./images/icone search.png" id="btnBusca" alt="Buscar" />
+        </div>
         <nav class="menu" id="menu">
             <ul>
                 <li>
@@ -35,28 +40,32 @@
                 </li>
                 <li>
                     <a href="./vidaNoturna.html">Vida Noturna</a>
-               </li>
+                </li>
 
             </ul>
             <!-- <a href="#" onclick="toogleNav()"><i class="fas fa-bars" id="header-toggle"></i></a> -->
         </nav>
     </div>
 
-<div class="btn-container">
-    <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><button>Alterar contraste</button></a>
-    <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
-    <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button> </div>
+    <div class="btn-container">
+        <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
+            onkeydown="window.toggleContrast()"><button>Alterar contraste</button></a>
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button> </div>
 
     <div class="container">
         <div class="title">
             <h1>berliner mauer</h1>
         </div>
         <div class="images">
-            <img class="spot_images" src="./images/pontosturisticos/berliner2.webp" alt="Foto do ponto turístico Berliner Mauer em Berlim">
-            <img class="spot_images" src="./images/pontosturisticos/berliner1.jfif" alt="Foto do ponto turístico Berliner Mauer em Berlim">
-            <img class="spot_images" src="./images/pontosturisticos/Berliner3.jpg" alt="Foto do ponto turístico Berliner Mauer em Berlim">
+            <img class="spot_images" src="./images/pontosturisticos/berliner2.webp"
+                alt="Foto do muro Berliner Mauer com muitos grafites coloridos">
+            <img class="spot_images" src="./images/pontosturisticos/berliner1.jfif"
+                alt="Foto do muro Berliner Mauer estragado e sem cor">
+            <img class="spot_images" src="./images/pontosturisticos/Berliner3.jpg"
+                alt="Foto de uma arte no muro com uma frase em alemão (wer will dass die welt so bleibt wie sie ist der will nicht dass sie bleibt)">
         </div>
-        <section class="info">
+        <section class=" info">
             <p>
                 Em português, Muro de Berlim. Durante a 2ª Guerra Mundial, Berlim foi um grande alvo, a cidade ficou
                 gravemente
@@ -82,7 +91,8 @@
                 <h3><i class="fa-solid fa-comments"></i> avaliações:</h3>
                 <div class="avaliation">
                     <div class="avaliation_img">
-                        <img class="person_img" src="./images/pontosturisticos/avaliaçaoberliner.jpg" alt="Foto do respectivo turista do Berliner Mauer que comentou">
+                        <img class="person_img" src="./images/pontosturisticos/avaliaçaoberliner.jpg"
+                            alt="Foto de uma turista mulher de pele branca com óculos e cabelos longos escuros">
                     </div>
                     <div class="avaliation_content">
                         <div class="avaliation_text">
@@ -106,13 +116,15 @@
 
                 <div class="avaliation">
                     <div class="avaliation_img">
-                        <img class="person_img" src="./images/pontosturisticos/avaliaçãoberliner2.jpg" alt="Foto do respectivo turista do Berliner Mauer que comentou">
+                        <img class="person_img" src="./images/pontosturisticos/avaliaçãoberliner2.jpg"
+                            alt="Foto de um turista de pele negra com cabelos curtos trançados">
                     </div>
                     <div class="avaliation_content">
                         <div class="avaliation_text">
                             <p class="person_name">Andrew Ferreira:</p>
                             <p>
-                                Visita obrigatória em Berlin. Local com muita informação sobre o Holocausto, incluindo mapas e cronologia.
+                                Visita obrigatória em Berlin. Local com muita informação sobre o Holocausto, incluindo
+                                mapas e cronologia.
                             </p>
                             <p class="grade">
                                 Nota:
@@ -148,7 +160,7 @@
     <script src="./js/high-contrast.js"></script>
 
     <script type="text/javascript">
-        window.onload = function() {
+        window.onload = function () {
             var elementBody = document.querySelector('body');
             var elementBtnIncreaseFont = document.getElementById('increase-font');
             var elementBtnDecreaseFont = document.getElementById('decrease-font');
@@ -156,32 +168,31 @@
             var fontSize = 100;
             // Valor de incremento ou decremento, equivale a 10% do valor do Body
             var increaseDecrease = 10;
-    
+
             // Evento de click para aumentar a fonte
-            elementBtnIncreaseFont.addEventListener('click', function(event) {
+            elementBtnIncreaseFont.addEventListener('click', function (event) {
                 fontSize = fontSize + increaseDecrease;
                 elementBody.style.fontSize = fontSize + '%';
             });
-    
+
             // Evento de click para diminuir a fonte
-            elementBtnDecreaseFont.addEventListener('click', function(event) {
+            elementBtnDecreaseFont.addEventListener('click', function (event) {
                 fontSize = fontSize - increaseDecrease;
                 elementBody.style.fontSize = fontSize + '%';
             });
         }
-    
     </script>
-    
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
 </body>
 
 </html>

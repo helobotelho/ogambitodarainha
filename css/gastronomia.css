@@ -88,7 +88,8 @@ body,
 }
 
 .bg-dark {
-    color: #000 !important;
+    color: #000
+    !important;
 }
 
 /** menu acima **/
@@ -384,7 +385,7 @@ h3 {
 }
 
 .card {
-    background-color: #000 !important;
+    background-color: rgba(72, 72, 72, 0.322) !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 15.5rem;
     height: 95%;
@@ -593,3 +594,42 @@ h6 {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
+
+#divBusca{
+    margin-left: 58vh !important;
+    background-color:#2e2e2e91;
+    border:solid 1px;
+    border-radius: 20px;
+    width: 35vh;
+    height: 4vh !important;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left: 15px;
+    font-style:italic;
+    font-size:16px;
+    border:none;
+    margin-top: -0.5vh;
+    height:32px;
+    width:260px;
+    color: #8e8e8e;
+  }
+  
+  #btnBusca{
+    margin-left: 30vh;
+    border:none;
+    float:left;
+    height: 3vh;
+  margin-top: -3.6vh;
+    border-radius:0 7px 7px 0;
+    width: 3vh;
+    font-weight:bold;
+    cursor: pointer;
+  }
+  
+  #divBusca img{
+    float:left;
+  }

@@ -523,3 +523,43 @@ button:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
+
+
+#divBusca{
+  margin-left: 58vh !important;
+  background-color:#2e2e2e91;
+  border:solid 1px;
+  border-radius: 20px;
+  width: 35vh;
+  height: 4vh !important;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left: 15px;
+  font-style:italic;
+  font-size:16px;
+  border:none;
+  margin-top: -0.5vh;
+  height:32px;
+  width:260px;
+  color: #8e8e8e;
+}
+
+#btnBusca{
+  margin-left: 30vh;
+  border:none;
+  float:left;
+  height: 3vh;
+margin-top: -3.6vh;
+  border-radius:0 7px 7px 0;
+  width: 3vh;
+  font-weight:bold;
+  cursor: pointer;
+}
+
+#divBusca img{
+  float:left;
+}

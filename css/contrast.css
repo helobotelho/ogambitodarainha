@@ -8,7 +8,7 @@
 .contrast main,
 .contrast aside,
 .contrast article .contrast header {
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.906);
     color: rgb(0, 0, 0) !important;
 }
 
@@ -16,7 +16,7 @@
 .contrast menu,
 .contrast col,
 .constrast nav {
-    background: rgb(125, 125, 125) !important;
+    background: rgb(17, 13, 13) !important;
     color: rgb(0, 0, 0) !important;
 }
 
@@ -24,13 +24,15 @@
     background: rgb(189, 189, 189) !important;
 }
 
-
 .contrast h1,
 .contrast h2,
 .contrast h3,
 .contrast h4,
 .contrast h5,
-.contrast h6,
+.contrast h6 {
+    color: rgb(0, 0, 0) !important;
+}
+
 .contrast p,
 .contrast label,
 .contrast strong,
@@ -42,6 +44,7 @@
 .contrast u,
 .contrast span {
     color: rgb(0, 0, 0) !important;
+    font-weight: 500;
 }
 
 .contrast a {

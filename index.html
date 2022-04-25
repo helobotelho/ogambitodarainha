@@ -19,7 +19,12 @@
 
 <body>
      <div class="header">
-          <div class="box_logo"> <img src="./images/logo logo.png" alt="Logo da Netflix da série o Gambito da Rainha"></div>
+          <div class="box_logo"> <img src="./images/logo logo.png" alt="Logo da Netflix da série o Gambito da Rainha">
+          </div>
+          <div id="divBusca">
+               <input type="text" id="txtBusca" placeholder="Buscar..." />
+               <img src="./images/icone search.png" id="btnBusca" alt="Buscar" />
+          </div>
           <nav class="menu" id="menu">
                <ul>
                     <li>
@@ -44,7 +49,7 @@
 
      <div class="btn-container">
           <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
-              onkeydown="window.toggleContrast()"><button id="altocontraste">Alterar contraste</button></a>
+               onkeydown="window.toggleContrast()"><button id="altocontraste">Alterar contraste</button></a>
           <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
           <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button> </div>
 
@@ -57,7 +62,8 @@
                     Gambito da Rainha" foram gravadas. O fenômeno que impulsionou o xadrez. Disponível na Netflix™.</h2>
           </div>
 
-          <div class="presentation_image"> <img class="bethImg" src="./images/beth.png" alt="O Gambito da Rainha">
+          <div class="presentation_image"> <img class="bethImg" src="./images/beth.png"
+                    alt="Foto da protagonista da série O gambito da Rainha de frente para uma mesa de xadrez com as mãos entrelaçadas encostando no queixo">
           </div>
      </section>
 
@@ -186,7 +192,7 @@
                               </div>
                          </div>
                          <div class="carousel-item">
-                              <iframe src="https://www.youtube.com/embed/oZn3qSgmLqI?autoplay=1">
+                              <iframe src="https://www.youtube.com/embed/oZn3qSgmLqI?autoplay=1" alt="Trailer Oficial da Netflix da série O Gambito da Rainha">
                               </iframe>
 
                          </div>
@@ -212,28 +218,28 @@
           <div class="box box_tourism">
                <div class="image">
                     <a href="./bode_museum.html">
-                         <img src="./images/bodemuseum.jpeg" alt="BODE MUSEUM"
+                         <img src="./images/bodemuseum.jpeg" alt="Foto da construção do Bode Museum"
                               class="media-object  img-responsive img-thumbnail">
                          <p class="img-paragraph">Bode Museum</p>
                     </a>
                </div>
                <div class="image">
                     <a href="./berliner_mauer.html">
-                         <img src="./images/berlinermauer.jpeg" alt="BERLINER MAUER"
+                         <img src="./images/berlinermauer.jpeg" alt="Foto de uma das paredes que foram coladas adesivos e folhetos do Berliner Mauer"
                               class="media-object  img-responsive img-thumbnail">
                          <p class="img-paragraph">Berliner Mauer</p>
                     </a>
                </div>
                <div class="image">
                     <a href="./reichstag.html">
-                         <img src="./images/reichstag.jpeg" alt="REICHSTAG"
+                         <img src="./images/reichstag.jpeg" alt="Foto da frente da construção do Reichstag com a bandeira da Alemanha na frente"
                               class="media-object  img-responsive img-thumbnail">
                          <p class="img-paragraph">Reichstag</p>
                     </a>
                </div>
                <div class="image">
                     <a href="./brandemburger_tor.html">
-                         <img src="./images/brandemburger.jpeg" alt="Brandenburger Tor"
+                         <img src="./images/brandemburger.jpeg" alt="Foto do portão do Brandenburger Tor, que parece um portal com a estátua em cima de um homem e 4 cavalos"
                               class="media-object img-responsive img-thumbnail">
                          <p class="img-paragraph">Brandenburger Tor</p>
                     </a>
@@ -250,41 +256,42 @@
                <script src="./js/app.js"></script>
                <script src="./js/high-contrast.js"></script>
 
-    <script type="text/javascript">
-        window.onload = function () {
-            var elementBody = document.querySelector('body');
-            var elementBtnIncreaseFont = document.getElementById('increase-font');
-            var elementBtnDecreaseFont = document.getElementById('decrease-font');
-            // Padrão de tamanho, equivale a 100% do valor definido no Body
-            var fontSize = 100;
-            // Valor de incremento ou decremento, equivale a 10% do valor do Body
-            var increaseDecrease = 10;
+               <script type="text/javascript">
+                    window.onload = function () {
+                         var elementBody = document.querySelector('body');
+                         var elementBtnIncreaseFont = document.getElementById('increase-font');
+                         var elementBtnDecreaseFont = document.getElementById('decrease-font');
+                         // Padrão de tamanho, equivale a 100% do valor definido no Body
+                         var fontSize = 100;
+                         // Valor de incremento ou decremento, equivale a 10% do valor do Body
+                         var increaseDecrease = 10;
 
-            // Evento de click para aumentar a fonte
-            elementBtnIncreaseFont.addEventListener('click', function (event) {
-                fontSize = fontSize + increaseDecrease;
-                elementBody.style.fontSize = fontSize + '%';
-            });
+                         // Evento de click para aumentar a fonte
+                         elementBtnIncreaseFont.addEventListener('click', function (event) {
+                              fontSize = fontSize + increaseDecrease;
+                              elementBody.style.fontSize = fontSize + '%';
+                         });
 
-            // Evento de click para diminuir a fonte
-            elementBtnDecreaseFont.addEventListener('click', function (event) {
-                fontSize = fontSize - increaseDecrease;
-                elementBody.style.fontSize = fontSize + '%';
-            });
-        }
-    </script>
-</div></div>
-   
-<div vw class="enabled">
-     <div vw-access-button class="active"></div>
-     <div vw-plugin-wrapper>
-       <div class="vw-plugin-top-wrapper"></div>
+                         // Evento de click para diminuir a fonte
+                         elementBtnDecreaseFont.addEventListener('click', function (event) {
+                              fontSize = fontSize - increaseDecrease;
+                              elementBody.style.fontSize = fontSize + '%';
+                         });
+                    }
+               </script>
+          </div>
      </div>
-   </div>
-   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-   <script>
-     new window.VLibras.Widget('https://vlibras.gov.br/app');
-   </script>
+
+     <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+               <div class="vw-plugin-top-wrapper"></div>
+          </div>
+     </div>
+     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script>
 
 </body>
 
