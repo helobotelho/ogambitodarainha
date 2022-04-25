@@ -1,11 +1,17 @@
 # Acessibilidade | Accessibility #
 
 ➛ Possibilidade de alterar o contraste para melhor visibilidade que visam ajudar pessoas com baixo grau de visão e/ou outros tipos de dificuldades na visão.
+
 ➛ Possibilidade de aumentar ou diminuir a fonte para melhor visibilidade que visam ajudar pessoas com baixo grau de visão e/ou outros tipos de dificuldades na visão.
+
 ➛ Plataforma da VLibras para traduzir conteúdos digitais (texto, áudio e vídeo) em Português para Libras.
+
 ➛ Atribuição de textos alternativos em todo conteúdo visual afim de facilitar a leitura em leitores de telas.
+
 ➛ Menu, busca e conteúdo, para facilitar o acesso. 
+
 ➛ Áreas clicáveis em formatos grandes, textos não justificados e cores escuras, para facilitar a leitura para usuários dislexicos.
+
 
 .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .      .
 
