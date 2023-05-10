@@ -17,15 +17,15 @@
 <body>
 
     <div class="header">
-        <div class="box_logo"> <img src="./images/logo logo.png" alt="Logo da Netflix da série o Gambito da Rainha"></div>
+        <div class="box_logo"> <img src="./images/logo logo.png" alt="Logo da Netflix da série o Gambito da Rainha">
+        </div>
         <div id="divBusca">
-            <input type="text" id="txtBusca" placeholder="Buscar..."/>
-            <img src="./images/icone search.png" id="btnBusca" alt="Buscar"/>
-          </div>
+            <input type="text" id="txtBusca" placeholder="Buscar..." class="custom-input" />
+        </div>
         <nav class="menu" id="menu">
-            <ul>
+            <ul class="menu-items">
                 <li>
-                    <a href="./index.html">Inicio</a>
+                    <a href="./index.html">Início</a>
                 </li>
                 <li>
                     <a href="./index.html#sobre">Sobre</a>
@@ -36,29 +36,24 @@
                 <li>
                     <a href="./gastronomia.html">Gastronomia</a>
                 </li>
-                <li>
-                    <a href="./vidaNoturna.html">Vida Noturna</a>
-               </li>
-    
             </ul>
             <!-- <a href="#" onclick="toogleNav()"><i class="fas fa-bars" id="header-toggle"></i></a> -->
         </nav>
     </div>
-    
-    <div class="btn-container">
-        <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><button>Alterar contraste</button></a>
-        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
-        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button> </div>
-    
+
+
 
     <div class="container">
         <div class="title">
             <h1>brandenburger tor</h1>
         </div>
         <div class="images">
-            <img class="spot_images" src="./images/pontosturisticos/brandenburger1.webp" alt="Foto da construção do portão de Brandemburgo de lado">
-            <img class="spot_images" src="./images/pontosturisticos/brandenburger2.jpg" alt="Foto da estátua localizada em cima do portão, onde tem um homem e 4 cavalos">
-            <img class="spot_images" src="./images/pontosturisticos/brandenburger3.jpg" alt="Foto da construção do portão de Brandemburgo de lado durante a noite com diversas iluminações">
+            <img class="spot_images" src="./images/pontosturisticos/brandenburger1.webp"
+                alt="Foto da construção do portão de Brandemburgo de lado">
+            <img class="spot_images" src="./images/pontosturisticos/brandenburger2.jpg"
+                alt="Foto da estátua localizada em cima do portão, onde tem um homem e 4 cavalos">
+            <img class="spot_images" src="./images/pontosturisticos/brandenburger3.jpg"
+                alt="Foto da construção do portão de Brandemburgo de lado durante a noite com diversas iluminações">
         </div>
         <section class="info">
             <p>
@@ -84,7 +79,7 @@
                 <p>24 horas por dia.</p>
                 <p>
                     O único setor sujeito a horários de abertura e fechamento é a Sala do Silêncio, um
-                    recanto de paz e meditação localizado na zona norte da atração. 
+                    recanto de paz e meditação localizado na zona norte da atração.
                 </p><br>
                 <p><b>Sala do Silêncio</b></p>
                 <p>de Março a Outubro: 11h00-18h00;</p>
@@ -95,7 +90,8 @@
                 <h3><i class="fa-solid fa-comments"></i> avaliações:</h3>
                 <div class="avaliation">
                     <div class="avaliation_img">
-                        <img class="person_img" src="./images/pontosturisticos/avaliaçaobrandemburger.jpg" alt="Foto de um turista idoso">
+                        <img class="person_img" src="./images/pontosturisticos/avaliaçaobrandemburger.jpg"
+                            alt="Foto de um turista idoso">
                     </div>
                     <div class="avaliation_content">
                         <div class="avaliation_text">
@@ -118,13 +114,15 @@
 
                 <div class="avaliation">
                     <div class="avaliation_img">
-                        <img class="person_img" src="./images/pontosturisticos/anonimo.jpg" alt="Foto padronizada de um anônimo">
+                        <img class="person_img" src="./images/pontosturisticos/anonimo.jpg"
+                            alt="Foto padronizada de um anônimo">
                     </div>
                     <div class="avaliation_content">
                         <div class="avaliation_text">
                             <p class="person_name">Anônimo:</p>
                             <p>
-                            Fiquei decepcionado com o tamanho do portão. Não sei porque imaginava maior. De qualquer forma atração interessante.
+                                Fiquei decepcionado com o tamanho do portão. Não sei porque imaginava maior. De qualquer
+                                forma atração interessante.
                             </p>
                             <p class="grade">
                                 Nota:
@@ -132,7 +130,8 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star gray-star"></i>
-                                <i class="fa-solid fa-star gray-star"  alt="Nota de avaliação de um turista = 3 estrelas"></i>
+                                <i class="fa-solid fa-star gray-star"
+                                    alt="Nota de avaliação de um turista = 3 estrelas"></i>
                             </p>
                         </div>
                     </div>
@@ -160,7 +159,7 @@
     <script src="./js/high-contrast.js"></script>
 
     <script type="text/javascript">
-        window.onload = function() {
+        window.onload = function () {
             var elementBody = document.querySelector('body');
             var elementBtnIncreaseFont = document.getElementById('increase-font');
             var elementBtnDecreaseFont = document.getElementById('decrease-font');
@@ -168,33 +167,33 @@
             var fontSize = 100;
             // Valor de incremento ou decremento, equivale a 10% do valor do Body
             var increaseDecrease = 10;
-    
+
             // Evento de click para aumentar a fonte
-            elementBtnIncreaseFont.addEventListener('click', function(event) {
+            elementBtnIncreaseFont.addEventListener('click', function (event) {
                 fontSize = fontSize + increaseDecrease;
                 elementBody.style.fontSize = fontSize + '%';
             });
-    
+
             // Evento de click para diminuir a fonte
-            elementBtnDecreaseFont.addEventListener('click', function(event) {
+            elementBtnDecreaseFont.addEventListener('click', function (event) {
                 fontSize = fontSize - increaseDecrease;
                 elementBody.style.fontSize = fontSize + '%';
             });
         }
-    
+
     </script>
-    
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-    
+    </script>
+
 
 
 </body>
